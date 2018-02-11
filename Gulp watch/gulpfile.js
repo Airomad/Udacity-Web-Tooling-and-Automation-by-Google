@@ -6,7 +6,8 @@ var stylesMask = './src/sass/**/*.scss';
 var jsMask = './src/js/**/*.js';
 
 gulp.task('watch', function () {
-  gulp.watch(stylesMask, ['styles', 'js']);
+  gulp.watch(stylesMask, ['styles']);
+  gulp.watch(jsMask, ['js']);
 });
 
 gulp.task('styles', function () {
